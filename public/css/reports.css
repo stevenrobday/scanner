@@ -1,0 +1,190 @@
+#headerWrap {
+  height: 60px;
+  background-color: #6f9eb2;
+}
+
+#header, #searchOrders, .row, .rowWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header {
+  width: 1000px;
+  margin: auto;
+  align-items: center;
+  height: 60px;
+}
+
+a {
+  font-size: 12px;
+  position: relative;
+  bottom: 1px;
+}
+
+a:link, a:visited {
+  color: #fff;
+}
+
+#searchOrders {
+  width: 1000px;
+  margin: 30px auto;
+}
+
+#search {
+  color: #fff;
+  border: none;
+  background-color: #e57301;
+  padding: 12px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+input {
+  border: 1px solid #929292;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+select {
+  border: 1px solid #929292;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#datepicker, #users {
+  width: 220px;
+}
+
+#orderNumber {
+  width: 320px;
+}
+
+#results {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+  width: 1000px;
+  margin: auto;
+}
+
+.user {
+  width: 300px;
+}
+
+.orderNum {
+  width: 400px;
+}
+
+.date {
+  width: 300px;
+}
+
+.orderNumSelect {
+  cursor: pointer;
+}
+
+#noResults {
+  width: 1000px;
+  margin: auto;
+  font-weight: bold;
+}
+
+#modalWrap{
+  display: none;
+  position: fixed; 
+  left: 0; 
+  top: 0;
+  width: 100%; 
+  height: 100%;
+}
+
+#modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 1100px;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  opacity: 1;
+  overflow-y: auto;
+  margin-top: 60px;
+}
+
+#orderInfo {
+  width: 1000px;
+  margin: 60px auto;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+}
+
+#orderInfo > div > div {
+  margin: 4px 0;
+}
+
+#itemsWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.item {
+  display: flex;
+  box-sizing: border-box;
+  width: 1000px;
+  border: 1px solid #000;
+}
+
+.noTop {
+  border-top: none;
+}
+
+.imgContainer, .qtyWrap {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.imgContainer {
+  border-right: 1px solid #000;
+  padding: 10px;
+}
+
+.imgWrap {
+  width: 100px;
+}
+
+.imgWrap img {
+  height: 100%;
+  width: 100%;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 4px;
+  width: 740px;
+}
+
+.sku {
+  font-weight: bold;
+  color: #6f9eb2;
+}
+
+.qtyWrap {
+  background-color: #d4d5d7;
+  border-left: 1px solid #929292;
+}
+
+.qty {
+  width: 160px;
+}

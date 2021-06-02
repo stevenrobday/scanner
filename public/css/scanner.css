@@ -1,0 +1,249 @@
+/* orders/index */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: Verdana;
+}
+
+#header {
+    width: 320px;
+    height: 44px;
+    background-color: #6f9eb2;
+    box-sizing: border-box;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header div {
+    margin: 0 16px;
+}
+
+a {
+    font-size: 12px;
+    position: relative;
+    bottom: 2px;
+}
+
+a:link, a:visited {
+    color: #fff;
+}
+
+#aboveInput {
+    margin: 20px 0px 12px 8px;
+}
+
+#orderNumber {
+    border: 1px solid #929292;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-left: 8px;
+    margin-bottom: 12px;
+    width: 304px;
+}
+
+#orderMsg {
+    margin-left: 8px;
+}
+
+/* orders/order */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Verdana;
+    position: relative;
+}
+#topBar {
+    position: fixed;
+    top: 0;
+    background-color: #6f9eb2;
+    width: 320px;
+    text-align: center;
+    z-index: 2;
+}
+
+#items {
+    margin-top: 54px;
+}
+
+#skuToFind {
+    margin: 10px;
+    border: 1px solid #929292;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 260px;
+}
+
+.item {
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 6px;
+    width: 308px;
+    border: 1px solid #929292;
+}
+
+.noTop {
+    border-top: none;
+}
+
+.imgContainer, .qtyWrap {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.imgContainer {
+    padding: 6px;
+    border-right: 1px solid #929292;
+}
+
+.imgWrap {
+    width: 60px;
+}
+
+.imgWrap img {
+    height: auto;
+    width: 100%;
+}
+
+.itemInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6px;
+    justify-content: center;
+}
+
+.sku {
+    font-weight: bold;
+    color: #6f9eb2;
+}
+
+.qty {
+    font-size: 24px;
+    width: 60px;
+}
+
+.qtyWrap {
+    background-color: #d4d5d7;
+    border-left: 1px solid #929292;
+    position: relative;
+}
+
+.qtyBtns {
+    border: none;
+    margin: auto;
+    padding: 5px 0;
+    font-size: 12px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #e57301;
+    width: 100%;
+}
+
+.override {
+    bottom: 0;
+}
+
+.changeQty {
+    top: 0;
+}
+
+.isScanned .qtyWrap {
+    background-color: #d8f7c6;
+}
+
+#modalShade {
+    background-color: #000;
+    opacity: 0.6;
+}
+
+#modalShade, #modalWrap {
+    display: none;
+    position: fixed; 
+    left: 0; 
+    top: 0;
+    width: 100%; 
+    height: 100%;
+}
+
+#modal {
+    position: absolute;
+    top: 108px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 200px;
+    width: 260px;
+    font-size: 18px;
+}
+
+#modal > div {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    position: relative;
+}
+
+#skuLine {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.msg {
+    margin-left: 20px;
+}
+
+#btnWrap, #inputLine {  
+    text-align: center;
+}
+
+#inputLine {
+    margin-top: 20px;
+}
+
+#okBtn, #okQtyBtn, #cancelBtn {
+    border: none;
+    margin: auto;
+    padding: 10px 30px;
+    color: #fff;
+    display: block;
+    position: absolute;
+    bottom: 30px;
+}
+
+#okBtn {
+    left: 0;
+    right: 0;
+    font-size: 26px;
+}
+
+#cancelBtn {
+    left: 20px;
+    font-size: 20px;
+}
+
+#okQtyBtn {
+    right: 20px;
+    font-size: 20px;
+}
+
+#saveOrderWrap {
+    width: 320px;
+    text-align: center;
+}
+
+#saveOrder {
+    margin: 10px 0;
+    border: none;
+    background-color: #add8e6;
+    padding: 20px;
+}
